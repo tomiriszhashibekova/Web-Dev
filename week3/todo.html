@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+        
+    </head>
+    
+ <style >
+     
+  
+body {
+  background: #fff;
+  color: #333;
+  font-family: Lato, sans-serif;
+
+}
+.container {
+  display: block;
+  width: 400px;
+  margin: 100px auto 0;
+
+}
+ul {
+  margin: 0;
+  padding: 0;
+
+}
+li * {
+  float: left;
+ text-decoration:none;
+}
+li, h3 {
+  clear:both;
+  list-style:none;
+
+}
+input, button {
+  outline: none;
+}
+button {
+  background: #3e7aab;
+  padding: 3px; 
+  font-size: 18px;
+  color: white;
+  border: 1px solid #3e7aaa;
+  font-size: 15px;
+  width: 60px;
+  margin: 5px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+
+.head{
+        background-color: black;
+        color: gray;
+        top: 0px;
+        left: 0px;
+        position:absolute;
+        width: 1480px;
+        height: 50px;
+        padding-left: 50px;
+    }
+
+h3,
+label[for='new-task'] {
+  color: #333;
+  font-weight: 700;
+  font-size: 30px;
+  
+  padding: 30px 0 10px;
+  margin: 0;
+  
+}
+input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+input[type="text"]:focus {
+  color: #333;
+
+}
+
+
+label[for='new-task'] {
+  display: block;
+  margin: 0 0 20px;
+
+}
+input#new-task {
+  float: left;
+
+  width: 318px;
+}
+p > button:hover {
+  color: #0FC57C;
+
+}
+
+
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+
+}
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+
+}
+li > label {
+  font-size: 18px;
+  line-height: 40px;
+  width: 237px;
+
+  padding: 0 0 0 11px;
+}
+li >  input[type="text"] {
+  width: 226px;
+
+}
+li > .delete:hover {
+  color: #CF2323;
+
+
+}
+
+
+#completed-tasks label {
+  
+  color: #888;
+
+
+}
+
+
+ul li input[type=text] {
+  display:none;
+}
+
+ul li.editMode input[type=text] {
+  display:block;
+}
+
+ul li.editMode label {
+  display:none;
+}
+.boxx{
+    border: 1px solid #f3f3f3;
+    border-radius: 3px;
+}
+ </style>
+
+
+
+
+
+
+   
+  <body>
+    <div class="container">
+         <div class="head">
+                <p>ToDo List</p>
+            </div>
+      <p>
+        <label for="new-task">ToDo List</label><input id="new-task" placeholder="New Task" type="text"><button>Add</button>
+      </p>
+      
+      <div class="boxx">
+      <ul id="incomplete-tasks">
+        <li><input type="checkbox"><label>bread</label><input type="text"><button class="delete">Delete</button></li>
+       
+        
+      </ul>
+  </div>
+      
+     
+     
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+
+  
+
+    </body>
+</html>
