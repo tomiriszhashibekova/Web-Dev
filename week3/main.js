@@ -66,7 +66,7 @@ var deleteTask=function(){
 
 var taskCompleted=function(){
 		console.log("Complete Task...");
-	
+	    
 	
 	var listItem=this.parentNode;
 	completedTasksHolder.appendChild(listItem);
@@ -74,14 +74,6 @@ var taskCompleted=function(){
 
 }
 
-
-var taskIncomplete=function(){
-		console.log("Incomplete Task...");
-
-		var listItem=this.parentNode;
-	incompleteTaskHolder.appendChild(listItem);
-			bindTaskEvents(listItem,taskCompleted);
-}
 
 
 
@@ -91,7 +83,7 @@ var ajaxRequest=function(){
 
 
 addButton.onclick=addTask;
-addButton.addEventListener("click",addTask);
+
 addButton.addEventListener("click",ajaxRequest);
 
 
@@ -110,17 +102,9 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 }
 
 
-	for (var i=0; i<incompleteTaskHolder.children.length;i++){
-
-		
-		bindTaskEvents(incompleteTaskHolder.children[i],taskCompleted);
-	}
-
-
-
-
-
-	for (var i=0; i<completedTasksHolder.children.length;i++){
+for (var i=0; i<completedTasksHolder.children.length;i++){
 	
 		bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
+		
+
 	}
