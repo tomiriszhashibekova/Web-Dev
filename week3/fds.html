@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    
+    <title>ToDoList</title>
+    <script src="main.js"></script>
+</head>
+<style>
+    .head{
+        background-color: black;
+        color: gray;
+        position:absolute;
+        width: 1480px;
+        height: 50px;
+        padding-left: 50px;
+    }
+
+    .Todolist{
+        color: black;
+        position: absolute;
+        top: 150px;
+        left: 250px;
+        font-size: 40px;
+        font-weight: bold;
+
+    }
+    #lable{
+    width: 350px;
+    position: absolute;
+    top: 160px;
+    left: 50px;
+    padding: 6px;
+    border: 1px solid gray;
+    border-radius: 2px;
+   }
+
+    
+    #add{
+      position: absolute;
+      top: 160px;
+      width: 50px;
+      left: 450px;
+      border: 1px solid #3e7aaa;
+      color: white;
+      padding: 3px;
+      font-size: 18px;
+      background-color: #3e7aab;
+   }
+   .list{
+    position: absolute;
+    border: 1px solid gray;
+    padding:0px;
+    width: 400px;
+    top: 380px;
+    left: 350px;
+   }
+
+   .listl{
+    border-bottom: 1px solid gray;
+    box-sizing: border-box;
+   }
+</style>
+<body>
+    
+        <div class="header">
+            <div class="head">
+                <p>ToDo List</p>
+            </div>
+        </div>
+
+    <div class="main">
+       <div class="Todolist">
+        <p>ToDo List</p>
+         <input id="lable" class="forms" type="text" required id="mobile" placeholder="New Task">
+       <button id="add">Add</button>
+
+       </div>
+       <div >
+           <hr>
+        <div id="out"></div>
+
+       </div>
+    </div>
+   
+ </body>
+</html>

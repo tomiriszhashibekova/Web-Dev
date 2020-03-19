@@ -1,0 +1,20 @@
+<button (click)="goBack()"><i class="arrow left"></i>Go back</button>
+
+<h3>
+  <a [title]="job.title + ' details'" >
+    {{ job.title }}
+  </a>
+</h3>
+
+
+<div class="rating">Rating:<span class="ratingNum">{{job.like_count}}</span></div>
+
+<p *ngIf="job.description">
+  Description: {{ job.description }}
+</p>
+
+
+
+
+
+
